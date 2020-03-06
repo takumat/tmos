@@ -1,4 +1,10 @@
 
+参考文献
+	30日でできる！OS自作入門
+	Raspberry Pi で学ぶコンピュータアーキテクチャ
+	BareMetal で遊ぶ Raspberry Pi https://tatsu-zine.com/books/raspi-bm
+
+
 Windows10 にクロスコンパイル環境を用意する
 
 ubuntu on windows を使用
@@ -6,6 +12,7 @@ ubuntu on windows を使用
 1. https://qiita.com/iwatake2222/items/5b20558f8ab3f27ca4a4
 2. https://blog.ikeryo1182.com/cross-compile/
 3. https://github.com/bztsrc/raspi3-tutorial/tree/master/00_crosscompiler
+
 
  *ubuntu on windows のシェルでコピペを有効にするにはこちらのページをみた
     https://ex1.m-yabe.com/archives/3388

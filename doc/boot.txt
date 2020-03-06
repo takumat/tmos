@@ -1,0 +1,20 @@
+
+Raspberry Pi のブートシーケンス (Raspberry Pi で学ぶコンピュータアーキテクチャより）
+
+RaspbianOSが含まれたSDメモリカードはブートパーティション (60M，FAT16 or FAT32) とext4ルートファイルシステムに分割される。
+ブートパーティション：GPUの初期化と，OSカーネルをメモリに読み込むだけ
+
+Raspberry PiのブートROMはFATパーティションからFSBL (First-Stage-Boot-Loader) を読み込む。ファイル名は bootcode.bin。
+FSBLはメインのファームウェアファイル start.elf を読み込む。最後に start.elf がカーネルイメージからOSカーネルを
+読み込んでメモリの先頭に配置し，ARM CPUのリセットを解除する。
+カーネルイメージのファイル名は ARMv6 CPUだと kernel.img，ARMv7，v8の場合はkernel7.img
+	Raspberry PI 2 以降は kernel7.img を要求する
+
+参考にしたサイト
+1. https://www.aps-web.jp/academy/ca/ (ARM概要)
+2. https://bunkyu3.hatenablog.com/entry/2018/10/21/185206
+3. https://github.com/takumat/raspi3-tutorial
+
+	CPU	 ARM CortexA53 (ARMv8)
+	GPU  VideoCore 4
+
